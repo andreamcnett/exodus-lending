@@ -1,0 +1,37 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<section class="main-content">
+  <div class="content">
+    <h1>{{page.hero_headline}}</h1>
+      <h4>{{page.hero_subheadline}}</h4>
+      <div class="btn-row">
+        <a href="{{TimberPost(page.hero_primary_button_link).link}}" class="btn-default btn-med">{{page.hero_primary_button}}</a>
+        <a href="{{TimberPost(page.hero_secondary_button_link).link}}" class="btn-default-underline">{{page.hero_secondary_button}}</a>
+      </div>
+  </div>
+</section>
+<section class="resources">
+	<div class="content">
+	  <hr />
+	  <h2>{{page.resources_title}}</h2>
+	  <p>{{page.resources_description}}</p>
+	  <div class="columns">
+	    <div class="column">
+	      {% for item in page.get_field('resources_column_1') %}
+	        <h3><a target="_blank" href="{{item.resource_link}}">{{item.resource}}</a></h3>
+	        <p>{{item.resource_description}}</p>
+	      {% endfor %}
+	    </div>
+	    <div class="column">
+	      {% for item in page.get_field('resources_column_2') %}
+	        <h3><a target="_blank" href="{{item.resource_link}}">{{item.resource}}</a></h3>
+	        <p>{{item.resource_description}}</p>
+	      {% endfor %}
+	    </div>
+	  </div>
+	</div>
+</section>
+
+         
+{% endblock %}

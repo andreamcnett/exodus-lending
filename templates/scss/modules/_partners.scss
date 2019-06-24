@@ -1,0 +1,14 @@
+section.partners {
+	background-color: $background-gray;
+	.partners {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.partner {
+
+	}
+	h5 {
+		font-weight: 400;
+		color: $accent-brand;
+	}
+}

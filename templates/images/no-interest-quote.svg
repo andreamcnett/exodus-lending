@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 381.521 255.626">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #70c8bc;
+      }
+
+      .cls-1 {
+        font-size: 32px;
+        font-family: Poppins-Bold, Poppins;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: #2e3192;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #70c8bc;
+        stroke-miterlimit: 10;
+        stroke-width: 7px;
+      }
+    </style>
+  </defs>
+  <g id="Group_978" data-name="Group 978" transform="translate(-3 -20)">
+    <text id="No_Interest._No_Fees._No_Judgment." data-name="No Interest.
+No Fees.
+No Judgment." class="cls-1" transform="translate(89.688 106.117)"><tspan x="0" y="0">No Interest.</tspan><tspan x="0" y="42">No Fees.</tspan><tspan class="cls-2"><tspan x="0" y="84">No Judgment.</tspan></tspan></text>
+    <g id="Group_885" data-name="Group 885" transform="translate(32.372 47.632)">
+      <g id="Group_868" data-name="Group 868">
+        <g id="Group_867" data-name="Group 867">
+          <path id="Path_885" data-name="Path 885" class="cls-3" d="M48.812,45.3l1.654,3.883c-3.955,2.085-9.851,8.125-10.858,14.453l.863-8.269,6.543,4.458a7.478,7.478,0,0,1,3.6,6.831,7.831,7.831,0,0,1-7.766,7.55c-3.02,0-5.033-1.582-6.543-2.661A15.151,15.151,0,0,1,34,63.42C33.928,55.223,39.824,48.464,48.812,45.3Zm20.062,0,1.654,3.883c-3.955,2.085-9.851,8.125-10.858,14.453l.863-8.269,6.543,4.458a7.478,7.478,0,0,1,3.6,6.831,7.831,7.831,0,0,1-7.766,7.55c-3.02,0-5.033-1.582-6.543-2.661a15.151,15.151,0,0,1-2.3-8.125C54.062,55.223,59.958,48.464,68.874,45.3Z" transform="translate(-33.999 -45.3)"/>
+        </g>
+      </g>
+    </g>
+    <path id="Path_932" data-name="Path 932" class="cls-4" d="M3.5,60.5V270.116H44.636V306.1L98.82,270.116h279.2V60.5Z" transform="translate(3 -37)"/>
+  </g>
+</svg>

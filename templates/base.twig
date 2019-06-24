@@ -1,0 +1,33 @@
+{% block html_head_container %}
+
+{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+	<body class="{{body_class}}" data-template="base.twig">
+		<header class="header" >
+			{% block header %}
+				<nav class="nav">
+				  <a class="logo" href="/"><img src="{{ site.theme.link }}/templates/images/exodus-lending-logo-blue.svg" alt="Exodus Lending Logo" /></a>
+				  {% include "menu.twig" with {'menu': menu.get_items} %}
+				  <a class="mobile-nav-icon" href="#"><i class="fas fa-bars"></i></a>
+				</nav>
+			{% endblock %}
+		</header>
+
+		<div class="page">
+			{% block content %}
+				Sorry, no content
+			{% endblock %}
+		</page>
+
+		{% block footer %}
+			<footer id="footer">
+				{% include 'footer.twig' %}
+			</footer>
+			{{ function('wp_footer') }}
+		{% endblock %}
+	</body>
+</html>

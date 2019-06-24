@@ -1,0 +1,21 @@
+section.image-with-text-basic {
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .text {
+    width: 33%;
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+    }
+  }
+  .image {
+    width: 33%;
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}

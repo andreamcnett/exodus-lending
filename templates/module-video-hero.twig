@@ -1,0 +1,18 @@
+<section class="hero" style="background-image: url('{{ site.theme.link }}/templates/images/backgrounds/teal-waves.svg')">
+  <div class="content">
+    <h1>{{module.hero_headline}}</h1>
+    <div class="video-container">
+        <div class="video-wrapper">
+          {{module.video_link}}
+        </div>
+      </div>
+    <div class="hero-details">
+      {% for item in module.hero_details %}
+      <div class="detail">
+        <h3>{{item.detail_title}}</h3>
+        <p>{{item.detail_description}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

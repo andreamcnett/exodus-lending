@@ -1,0 +1,19 @@
+body.page-id-73 {
+	section.hero {
+		background-color: $primary-brand;
+		background-position: bottom;
+		background-size: contain;
+	}
+	section.board {
+		.members {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.board-member {
+			border: 4px solid $light-accent-brand;
+			width: 412px;
+			padding: $large-spacing;
+			margin: $large-spacing;
+		}
+	}
+}

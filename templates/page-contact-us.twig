@@ -1,0 +1,46 @@
+{% extends "base.twig" %}
+
+{% block content %}
+  <section class="main-content" style="background-image: url('{{ site.theme.link }}/templates/images/backgrounds/teal-angle.svg')">
+    <div class="content">
+      <h1>{{page.contact_intro}}</h1>
+      <div class="columns">
+        <div class="column">
+          <div class="contact-form text-box">
+            <h2>{{page.form_title}}</h2>
+            <p>{{page.form_description}}</p>
+            <div class="form">
+              {{page.get_field('form')}}
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="address text-box">
+            <h2>{{page.address_address_title}}</h2>
+            <h5>{{page.address_address}}</h5>
+            <p>{{page.address_note}}</p>
+          </div>
+          <div class="address text-box">
+            <h2>{{page.appointment_appointments_title}}</h2>
+            <p>{{page.appointment_note}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="location">
+    <div class="content">
+      <hr />
+      <h2>{{page.location_title}}</h2>
+      <div class="columns">
+        <div class="column">
+          <div class="map">{{page.map}}</div>
+        </div>
+        <div class="column">
+          <div class="image" style="background-image: url('{{ TimberImage(page.location_image).src }}">
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

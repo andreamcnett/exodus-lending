@@ -1,0 +1,47 @@
+<div class="sticky-footer">
+
+  <div class="content">
+    <i class="fas fa-times-circle"></i>
+    <h4>Join Minnesota Attorney General Keith Ellison and Diane Standaert of the Center for Responsible Lending at our 4th annual summer fundraiser on July 16th!</h4>
+    <a class="btn-white btn-med" href="#">Buy Tickets</a>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="top-footer" style="background-image: url('{{ site.theme.link }}/templates/images/backgrounds/teal-waves.svg')">
+    <section class="you-can-help">
+      <div class="content">
+        <div class="text">
+          <h2>{{options.first_title}}</h2>
+          <h4>{{options.first_description}}</h4>
+        </div>
+        <div class="btn-row">
+          <a class="btn-default btn-med" href="{{options.first_link}}">{{options.first_link_text}}</a>
+        </div>
+      </div>
+    </section>
+    <section class="get-help">
+      <div class="content">
+        <div class="text">
+          <h2>{{options.second_title}}</h2>
+          <h4>{{options.second_description}}</h4>
+        </div>
+        <div class="btn-row">
+          <a class="btn-white btn-med"href="{{options.second_button_a_link}}">{{options.second_button_a_text}}</a>
+          <a class="btn-white-underline"href="{{options.second_button_b_link}}">{{options.second_button_b_text}}</a>
+        </div>
+      </div>
+      
+    </section>
+  </div>
+  <div class="bottom-footer">
+    {% include "menu.twig" with {'menu': footer_menu.get_items} %}
+    {{options.bottom_text}}
+  </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script type='text/javascript' src='{{ site.theme.link }}/templates/js/main.js'></script>

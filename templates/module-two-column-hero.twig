@@ -1,0 +1,15 @@
+<section class="main-content" style="background-image: url('{{ site.theme.link }}/templates/images/backgrounds/purple-waves.svg')">
+    <div class="content">
+      <h1>{{module.hero_title}}</h1>
+      <div class="columns">
+      	{% for item in module.call_to_actions %}
+	        <div class="column">
+	          <div class="text-box">
+	            <h2>{{item.call_to_action_title}}</h2>
+	            <p>{{item.call_to_action_description}}</p>
+	            <a class="btn-default btn-med" href="{{item.link}}">{{item.link_text}}</a>
+	          </div>
+	        </div>
+	    {% endfor %}
+    </div>
+  </section>

@@ -1,0 +1,30 @@
+section.three-icons {
+    margin-bottom: $xl-spacing;
+    .content {
+      padding: 0;
+      border-top: 7px solid $primary-brand;
+      border-right: 7px solid $background-gray;
+      border-bottom: 7px solid $background-gray;
+      border-left: 7px solid $background-gray;
+      .row {
+        padding: $xl-spacing $large-spacing 0 $large-spacing;
+        display: flex;
+        @media screen and (max-width: $break-small) {
+          flex-direction: column;
+        }
+      }
+      .column {
+        width: 1px / 3px * 100%;
+        text-align: center;
+        margin: 0 $large-spacing;
+        @media screen and (max-width: $break-small) {
+          width: 100%;
+          margin: 0;
+        }
+      }
+      img {
+        height: 65px;
+        margin-bottom: $med-spacing;
+      }
+    }
+  }

@@ -1,0 +1,52 @@
+.accordion {
+  padding: 0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    border-bottom: 7px solid $background-gray;
+    list-style: none;
+    position: relative;
+    > a {
+      color: $text-gray;
+      display: block;
+      padding: $large-spacing;
+      text-decoration: none;
+    }
+
+    &:last-child {
+      border: 0;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: $background-gray;
+    }
+    .svg-inline--fa {
+      position: absolute;
+      right: $large-spacing;
+      font-size: $large-spacing;
+      top: $large-spacing;
+      color: $accent-brand;
+    }
+  }
+
+  .accordion-content {
+    display: none;
+    padding: $large-spacing;
+  }
+
+  .is-expanded {
+    display: block;
+    padding-bottom: 0;
+    > a {
+      color: $accent-brand;
+      font-size: 32px;
+      margin: 0 0 $med-spacing 0;
+      line-height: 42px;
+    }
+  }
+}

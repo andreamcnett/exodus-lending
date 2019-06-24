@@ -1,0 +1,115 @@
+@mixin main-font {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+h1 {
+  @include main-font;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 $small-spacing 0;
+  @media screen and (max-width: $break-small) {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 $med-spacing 0;
+  line-height: 42px;
+  @media screen and (max-width: $break-small) {
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 28px;
+  margin: 0;
+  line-height: 40px;
+  @media screen and (max-width: $break-small) {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0 0 22px 0;
+  line-height: 34px;
+  @media screen and (max-width: $break-small) {
+    font-size: 16px;
+    margin: 0 0 28px 0;
+    line-height: 28px;
+  }
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  line-height: 30px;
+  @media screen and (max-width: $break-small) {
+    font-size: 16px;
+    margin: 0 0 16px 0;
+    line-height: 24px;
+  }
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0 0 16px 0;
+  line-height: 20px;
+  @media screen and (max-width: $break-small) {
+    font-size: 14px;
+    margin: 0 0 14px 0;
+    line-height: 16px;
+  }
+}
+
+p,
+ul {
+  font-size: 18px;
+  margin: 0 0 $small-spacing 0;
+  line-height: 26px;
+  color: $text-gray;
+  font-weight: 400;
+  @media screen and (max-width: $break-small) {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    line-height: 20px;
+  }
+  &.label {
+    font-size: 14px;
+    font-style: italic;
+  }
+}
+
+a {
+  color: $primary-link;
+  text-decoration: none;
+  font-weight: 600;
+  i {
+    padding-left: $med-spacing;
+  }
+}
+a:hover {
+  color: $primary-brand;
+}
+
+hr {
+  width: 30px;
+  position: absolute;
+  border-top: solid 7px $text-gray;
+  top: $xl-spacing;
+  border-style: solid;
+  @media screen and (max-width: $break-small) {
+    top: 16px;
+    border-top: solid 5px $text-gray;
+  }
+}
+

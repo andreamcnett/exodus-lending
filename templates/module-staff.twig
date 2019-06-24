@@ -1,0 +1,18 @@
+ <section class="staff" style="background-image: url('{{ site.theme.link }}/templates/images/backgrounds/teal-angle.svg')" >
+  <div class="content">
+    <hr />
+    <h2>{{module.staff_title}}</h2>
+    {% for item in module.staff_members %}
+      <div class="staff-member">
+        <div class="image" style="background-image: url('{{ TimberImage(item.staff_image).src }}">
+        </div>
+        <div class="text">
+          <a href="mailto:{{item.staff_email}}"><i class="fas fa-envelope"></i></a>
+          <h3>{{item.staff_name}}</h3>
+          <h6>{{item.staff_position}}</h6>
+          <p>{{item.staff_bio}}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

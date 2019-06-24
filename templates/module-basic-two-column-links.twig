@@ -1,0 +1,21 @@
+ <section class="resources">
+    <div class="content">
+      <hr />
+      <h2>{{module.resources_title}}</h2>
+      <p>{{module.resources_description}}</p>
+      <div class="columns">
+        <div class="column">
+          {% for item in module.resources_column_1 %}
+            <h3><a target="_blank" href="{{item.resource_link}}">{{item.resource}}</a></h3>
+            <p>{{item.resource_description}}</p>
+          {% endfor %}
+        </div>
+        <div class="column">
+          {% for item in module.resources_column_2 %}
+            <h3><a target="_blank" href="{{item.resource_link2}}">{{item.resource2}}</a></h3>
+            <p>{{item.resource_description2}}</p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>

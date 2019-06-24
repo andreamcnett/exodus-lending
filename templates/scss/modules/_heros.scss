@@ -1,0 +1,72 @@
+section.hero {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .content {
+    padding: $xl-spacing 0;
+    text-align: center;
+    margin-bottom: $xl-spacing;
+    @media screen and (max-width: $break-small) {
+      padding: $med-spacing;
+    }
+  }
+  .video-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .video-wrapper {
+    border-top: 7px solid white;
+  }
+  .hero-details {
+    display: flex;
+    @media screen and (max-width: $break-small) {
+      flex-direction: column;
+    }
+  }
+  .detail {
+    background-color: white;
+    width: 50%;
+    margin: $large-spacing;
+    padding: $large-spacing;
+    text-align: center;
+    @media screen and (max-width: $break-small) {
+      width: inherit;
+      margin: $small-spacing 0;
+      padding: $large-spacing;
+    }
+  }
+  h1 {
+    color: white;
+    margin-bottom: $xl-spacing;
+  }
+  a {
+    margin-left: $large-spacing/2;
+    margin-right: $large-spacing/2;
+  }
+  h1,
+  h4 {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h4 {
+    margin-bottom: $large-spacing;
+  }
+
+}
+
+section.full-width-hero {
+  .content {
+    color: white;
+    background-color: $primary-brand;
+  }
+  @media screen and (max-width: $break-small) {
+      h3 {
+        padding-top: $med-spacing;
+      }
+      p {
+        padding: $med-spacing;
+      }
+    }
+}

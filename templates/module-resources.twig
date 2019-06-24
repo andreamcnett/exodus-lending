@@ -1,0 +1,16 @@
+<section class="partners">
+    <div class="content">
+      <hr />
+      <h2>{{module.partner_title}}</h2>
+      <div class="partners">
+        <ul>
+        {% for item in module.partners %}
+          <div class="partner">
+              <li><a target="_blank" href="{{item.partner_link}}">{{item.partner_name}}</a></h5>
+            <p>{{item.partner_location}}</p></li>
+          </div>
+        {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </section>

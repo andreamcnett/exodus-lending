@@ -1,0 +1,23 @@
+section.text-with-image-card {
+  background-color: $background-gray;
+  .content {
+    display: flex;
+    padding-top: 0;
+  }
+  .image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    @media screen and (max-width: $break-small) {
+      height: 320px;
+    }
+  }
+  .text {
+    background-color: white;
+    padding: $xl-spacing;
+    @media screen and (max-width: $break-small) {
+      padding: $med-spacing;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<section class="board">
+    <div class="content">
+      {% set board = page.get_field('board') %}
+      <hr />
+      <h2>{{module.board_title}}</h2>
+      <div class="members">
+        {% for item in module.board_members %}
+          <div class="board-member">
+            <h3>{{item.member_name}}</h3>
+            <h6>{{item.member_position}}</h6>
+            <p>{{item.member_job}}</p>
+            <p>
+              <a href="{{item.member_link}}">
+                {{item.member_link_title}}
+              </a>
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>

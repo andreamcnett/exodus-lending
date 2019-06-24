@@ -1,0 +1,12 @@
+section.main-content {
+	padding: $xl-spacing 0;
+	background-color: $background-gray;
+	h1,
+	h4 {
+		color: $primary-brand;
+		text-align: center;
+	}
+	.content {
+		margin-bottom: 0;
+	}
+}

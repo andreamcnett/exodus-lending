@@ -1,0 +1,45 @@
+section.three-column-text-with-image {
+  .row {
+      display: flex;
+      @media screen and (max-width: $break-small) {
+        flex-direction: column;
+      }
+    }
+    .column {
+      width: 1px / 3px * 100%;
+      text-align: center;
+      margin: 0 $large-spacing;
+      background-color: $background-gray;
+      border-top: 7px solid $light-accent-brand;
+      @media screen and (max-width: $break-small) {
+        width: 100%;
+        margin: $small-spacing 0;
+      }
+    }
+    .column:first-child {
+      margin-left: 0;
+    }
+    .column:last-child {
+      margin-right: 0;
+    }
+    .image {
+      height: 300px;
+      background-size: cover;
+      background-position: center, center;
+    }
+    .text {
+      margin: $med-spacing;
+    }
+    h3 {
+      text-align: left;
+      margin-top: $med-spacing;
+    }
+    p {
+      text-align: left;
+    }
+    a.btn-default {
+      display: inline-block;
+      margin-top: $med-spacing;
+      margin-bottom: $med-spacing;
+    }
+}

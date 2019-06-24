@@ -1,0 +1,14 @@
+ <section class="program">
+  <div class="content">
+    <ul class="accordion">
+      {% for item in module.accordion %}
+        <li>
+          <a href="javascript:void(0)" class="js-accordion-trigger">{{item.accordion_title}}</a><i class="fas fa-angle-down"></i>
+          <div class="accordion-content">
+            <p>{{item.accordion_description}}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

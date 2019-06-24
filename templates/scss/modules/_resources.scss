@@ -1,0 +1,20 @@
+section.resources {
+	.columns {
+		display: flex;
+		@media screen and (max-width: $break-small) {
+          flex-direction: column;
+        }
+	}
+	.column {
+		width: 55%;
+		padding-right: $xl-spacing;
+		@media screen and (max-width: $break-small) {
+          width: 100%;
+          padding: 0;
+        }
+	}
+	a {
+		display: block;
+		margin-top: $large-spacing;
+	}
+}

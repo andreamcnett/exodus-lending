@@ -1,0 +1,17 @@
+<svg id="Group_1112" data-name="Group 1112" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.565 75.421">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #70c8bc;
+      }
+
+      .cls-2 {
+        fill: #2e3192;
+      }
+    </style>
+  </defs>
+  <path id="Path_928" data-name="Path 928" class="cls-1" d="M7.028,34.568h8.8L9.542,28.283,30.283,7.542,41.6,18.855,25.883,34.568h8.8L48.2,21.055a3.038,3.038,0,0,0,0-4.4L32.483.943a3.038,3.038,0,0,0-4.4,0L2.943,26.083a3.038,3.038,0,0,0,0,4.4Z" transform="translate(4.285 0)"/>
+  <path id="Path_929" data-name="Path 929" class="cls-1" d="M53.423,12H3.143A2.969,2.969,0,0,0,0,15.143V46.568A2.969,2.969,0,0,0,3.143,49.71H53.423a2.969,2.969,0,0,0,3.143-3.143V15.143A2.969,2.969,0,0,0,53.423,12ZM50.281,43.425h-44V18.285h44Z" transform="translate(0 25.71)"/>
+  <path id="Path_930" data-name="Path 930" class="cls-2" d="M12.285,33.855H18.57V27.57h6.285V21.285H18.57V15H12.285v6.285H6V27.57h6.285Z" transform="translate(12.855 32.138)"/>
+  <circle id="Ellipse_83" data-name="Ellipse 83" class="cls-2" cx="4.714" cy="4.714" r="4.714" transform="translate(25.14 18.855)"/>
+</svg>

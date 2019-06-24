@@ -1,0 +1,106 @@
+header.header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  padding: $large-spacing 0;
+  margin-top: -110px;
+}
+nav.nav {
+  @include content-container;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0;
+  hr {
+    bottom: 20px;
+    display: none;
+    border: 2px solid $primary-brand;
+    top: inherit;
+  }
+  li.current_page_item > hr {
+    display: inherit;
+  }
+  a.logo {
+    display: block;
+  }
+  img {
+    height: 45px;
+  }
+  ul {
+    margin-top: $small-spacing;
+    padding-left: $med-spacing;
+    padding-right: $med-spacing;
+    @media screen and (max-width: $break-nav) {
+      display: none;
+    }
+    li {
+      margin-right: 25px;
+      display: inline-block;
+      list-style-type: none;
+      position: relative;
+    }
+    a {
+      color: $primary-brand;
+      font-size: 18px;
+      font-weight: 600;
+      &:hover {
+        color: $accent-brand;
+      }
+    }
+    li:last-child {
+      margin-right: 0;
+      padding-top: $small-spacing;
+      a {
+        color: white;
+        background-color: $accent-brand;
+        padding: 10px 15px;
+        border-radius: 3px;
+        &:hover {
+          background-color: $primary-brand;
+        }
+      }
+    }
+    li:nth-child(5) {
+      a {
+        color: $accent-brand;
+        &:hover {
+          color: $primary-brand;
+        }
+      }
+    }
+  }
+  a.mobile-nav-icon {
+    display: none;
+    font-size: 36px;
+    right: $med-spacing;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: $break-nav) {
+  nav.nav {
+    display: hidden;
+    a.logo {
+      padding-left: $med-spacing;
+    }
+    a.mobile-nav-icon {
+      display: inline;
+      position: absolute;
+    }
+    &:hover {
+      display: block;
+      height: 100%;
+      ul {
+        display: block;
+        margin-top: $large-spacing;
+      }
+      li {
+        display: block;
+        margin-bottom: $small-spacing;
+      }
+    }
+  }
+}

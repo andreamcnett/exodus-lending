@@ -1,0 +1,17 @@
+section.testimonials {
+    background-color: $primary-brand;
+    padding-bottom: $xl-spacing;
+    .content {
+      border: 7px solid white;
+      padding: $large-spacing 0;
+    }
+    img {
+      width: 55px;
+      padding: $large-spacing $large-spacing 0 $large-spacing;
+    }
+    h1 {
+      color: white;
+      padding: 0 $xl-spacing $large-spacing 100px;
+      text-align: left;
+    }
+  }

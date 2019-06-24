@@ -1,0 +1,56 @@
+body.page-id-212,
+body.page-id-205,
+body.page-id-181,
+body.page-id-249,
+body.page-id-1174 {
+	.hero {
+		h1,
+		h4 {
+			color: $primary-brand;
+		}
+		h4 {
+			margin-bottom: 0;
+		}
+	}
+	.content-form {
+		@include small-content-container;
+		background-color: white;
+		border-top: 7px solid $primary-brand;
+		padding: $large-spacing;
+	}
+	input,
+	textarea {
+		max-width: 800px;
+		margin-bottom: $large-spacing;
+	}
+	label {
+		margin-bottom: $small-spacing;
+	}
+}
+
+div.kimbiaDiv .eventDescription {
+	display: none !important;
+}
+
+div.kimbiaDiv label.groupLabel.section {
+	margin: 0 !important;
+
+}
+
+input#mc-embedded-subscribe {
+	width: inherit;
+}
+
+.checkbox {
+	input,
+	label {
+		display: inline;
+	}
+	input {
+		width: 20px;
+	}
+}
+
+form {
+	
+}

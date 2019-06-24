@@ -1,0 +1,20 @@
+body.single-post {
+	section.hero {
+		background: $background-gray;
+		padding: $xl-spacing 0;
+		h1 {
+			color: $primary-brand;
+			text-align: center;
+		}
+		@media screen and (max-width: $break-small) {
+		    padding: 0;
+		  }
+	}
+	section.article {
+		padding: $xl-spacing 0;
+		p {
+			font-size: 22px;
+			line-height: 34px;
+		}
+	}
+}

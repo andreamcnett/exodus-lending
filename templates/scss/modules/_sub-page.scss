@@ -1,0 +1,17 @@
+section.sub-page {
+	.hero {
+		h1,
+		h4 {
+			color: $primary-brand;
+		}
+		h4 {
+			margin-bottom: 0;
+		}
+	}
+	.centered-content {
+		@include small-content-container;
+		background-color: white;
+		border-top: 7px solid $primary-brand;
+		padding: $large-spacing;
+	}
+}

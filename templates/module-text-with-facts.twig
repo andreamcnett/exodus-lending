@@ -1,0 +1,17 @@
+<section class="text-with-facts">
+  <div class="content">
+    <div class="column-a">
+      <hr />
+      <h2>{{module.main_title}}</h2>
+      <h4>{{module.main_description}}</h4>
+    </div>
+    <div class="column-b">
+      {% for item in module.problem_facts %}
+        <div class="text">
+          <h1>{{item.fact_title}}</h1>
+          <p>{{item.fact_caption}}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

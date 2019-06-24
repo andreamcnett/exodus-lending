@@ -1,0 +1,26 @@
+<section class="facts">
+    <div class="content">
+      <hr />
+      <h2>{{module.title}}</h2>
+      <div class="row">
+        {% for item in module.facts %}
+          <div class="column">
+            <h1>{{item.number}}</h1>
+            <p>{{item.description}}</p>
+          </div>
+        {% endfor %}
+        </div>
+    </div>
+  </section>
+ <section class="testimonials">
+    <div class="content">
+      <img src="{{ site.theme.link }}/templates/images/quote-icon.svg" alt="left-quote" />
+      <div class="slider">
+        {% for item in module.testimonials %}
+          <div class="slide"> 
+            <h1>{{item.success_testimonial}}</h1>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,16 @@
+<section class="three-icons">
+  <div class="content">
+    <div class="row">
+      {% for item in module.columns %}
+        <div class="column">
+          <img src="{{ TimberImage(item.detail_icon).src }}" />
+          <h3>{{item.detail_title}}</h3>
+          <h5>{{item.detail_description}}</h5>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="btn-row">
+      <a class="btn-default btn-med" href="{{module.call_to_action_link}}">{{module.call_to_action_text}}</a>
+    </div>
+  </div>
+</section>

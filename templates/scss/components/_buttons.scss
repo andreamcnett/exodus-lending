@@ -1,0 +1,63 @@
+a.btn-med,
+button.btn-med,
+input[type=button],
+div.kimbiaDiv button.k_button.forward,
+input#mc-embedded-subscribe {
+	@include main-font;
+  padding: $med-spacing $large-spacing !important;
+  border-radius: 5px !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  border: none;
+}
+
+a.btn-default,
+button.btn-default,
+input[type=button],
+div.kimbiaDiv button.k_button.forward,
+input#mc-embedded-subscribe  {
+  background-color: $primary-link !important;
+  color: white !important;
+  &:hover {
+  	background-color: $primary-brand !important;
+  }
+}
+
+a.btn-white,
+button.btn-white {
+	background-color: white;
+	color: $accent-brand;
+	&:hover {
+		color: $primary-brand;
+	}
+}
+
+a.btn-white-underline,
+button.btn-white-underline {
+	font-size: 20px;
+	font-weight: 500;
+	border-bottom: 4px solid white;
+	color: white;
+	text-decoration: none;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	&:hover {
+		color: $light-accent-brand;
+		border-bottom: 4px solid $light-accent-brand;
+	}
+}
+
+a.btn-default-underline,
+button.btn-default-underline {
+	font-size: 20px;
+	font-weight: 500;
+	border-bottom: 4px solid $primary-link;
+	color: $primary-link;
+	text-decoration: none;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	&:hover {
+		color: $light-accent-brand;
+		border-bottom: 4px solid $light-accent-brand;
+	}
+}

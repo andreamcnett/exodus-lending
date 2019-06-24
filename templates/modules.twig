@@ -1,0 +1,8 @@
+
+{% if not modules %}
+    {% set modules =  page.get_field('modules') %}
+{% endif %}
+
+{% for module in modules %}
+    {% include 'module-' ~ module.acf_fc_layout ~ '.twig' %}
+{% endfor %}

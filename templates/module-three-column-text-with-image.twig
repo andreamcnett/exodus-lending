@@ -1,0 +1,17 @@
+<section class="three-column-text-with-image">
+  <div class="content">
+    <div class="row">
+      {% for item in module.columns %}
+        <div class="column">
+          <div class="image" style="background-image: url({{ TimberImage(item.column_image).src }}");>
+          </div>
+          <div class="text">
+            <h3>{{item.column_title}}</h3>
+            <p>{{item.column_description}}</p>
+            <a class="btn-default btn-med" href="{{item.column_link}}">{{item.column_link_text}}</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

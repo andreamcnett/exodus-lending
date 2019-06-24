@@ -1,0 +1,48 @@
+input,
+textarea {
+	padding: 10px;
+	font-size: 14px;
+	border: $med-gray 1px solid;
+	width: 100%;
+}
+
+label {
+	font-weight: 400;
+	display: block;
+}
+
+.nf-field-label label {
+	font-weight: 400 !important;
+}
+
+select {
+	height: 20px;
+}
+
+.nf-form-title {
+	display: none;
+}
+
+.nf-form-fields-required,
+.indicates-required {
+	text-align: left;
+	font-style: italic;
+	margin: $large-spacing 0;
+}
+
+.nf-field-container {
+	margin-bottom: $large-spacing !important;
+}
+
+.label-above .nf-field-label {
+	margin-bottom: 5px !important;
+}
+
+.nf-after-field .nf-error-msg {
+	text-align: left;
+	font-style: italic;
+}
+
+span.asterisk {
+	color: red;
+}

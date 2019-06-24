@@ -1,0 +1,15 @@
+$primary-brand: #2E3192;
+$accent-brand: #00A08B;
+$light-accent-brand: #70c8bc;
+$primary-link: $accent-brand;
+$accent-link: $accent-brand;
+$text-gray: #414042;
+$transparent-black: rgba(0,0,0,0.75);
+$background-gray: #F1F2F2;
+$med-gray: #c0bfc1;
+
+@mixin box-shadow {
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.36);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.36);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.36);
+}

@@ -1,0 +1,41 @@
+section.facts {
+    background-color: $primary-brand;
+    hr {
+      border-color: white;
+    }
+    h2 {
+      color: white;
+    }
+    @media screen and (max-width: $break-small) {
+      p {
+        font-size: 16px;
+      }
+    }
+    .row {
+      display: flex;
+      @media screen and (max-width: $break-small) {
+        flex-direction: column;
+      }
+    }
+    .column {
+      width: 1px / 3px * 100%;
+      text-align: center;
+      margin: 0 $large-spacing;
+      padding: $large-spacing 0;
+      background-color: white;
+      border-top: 7px solid $light-accent-brand;
+      @media screen and (max-width: $break-small) {
+        width: 100%;
+        margin: $small-spacing 0;
+      }
+    }
+    .column:first-child {
+      margin-left: 0;
+    }
+    .column:last-child {
+      margin-right: 0;
+    }
+    h1 {
+      color: $light-accent-brand;
+    }
+  }
