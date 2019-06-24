@@ -11,4 +11,8 @@ $(document).ready(function(){
   	autoplay: true,
   	autoplaySpeed: 5000
   });
+  $("#hide-sticky-footer").click(function(){
+    $(".sticky-footer").hide();
+  });
 });
+

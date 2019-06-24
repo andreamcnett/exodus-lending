@@ -460,7 +460,7 @@ button.btn-default-underline {
     color: white;
     margin-bottom: 30px;
     text-align: center; }
-  .sticky-footer a {
+  .sticky-footer a.btn-med {
     left: 50%;
     transform: translate(-50%, 0);
     position: absolute;
