@@ -1237,6 +1237,9 @@ section.sub-page .centered-content {
   border-top: 7px solid #2E3192;
   padding: 30px; }
 
+section.full-width-content .module-content img {
+  width: 100%; }
+
 section.three-column-text-with-image .row {
   display: flex; }
   @media screen and (max-width: 550px) {
