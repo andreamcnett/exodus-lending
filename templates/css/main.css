@@ -1238,7 +1238,8 @@ section.sub-page .centered-content {
   padding: 30px; }
 
 section.full-width-content .module-content img {
-  width: 100%; }
+  width: 100%;
+  height: auto; }
 
 section.three-column-text-with-image .row {
   display: flex; }
