@@ -13,59 +13,59 @@ section.fundraiser {
           padding: 0;
         }
 	}
-}
 
-#countdown-wrap {
-  width: 100%;
-  height: 300px;
-  padding: 20px;
-  max-width: 650px;
-}
-
-#goal {
-  font-size: 48px;
-  text-align: right;
-  @media only screen and (max-width : 640px) {
-    text-align: center;  
+  #countdown-wrap {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    max-width: 650px;
   }
-  
-}
 
-#glass {
-  width: 100%;
-  height: 20px;
-  background: $background-gray;
-  border-radius: 10px;
-  float: left;
-  overflow: hidden;
-}
+  #goal {
+    font-size: 48px;
+    text-align: right;
+    @media only screen and (max-width : 640px) {
+      text-align: center;  
+    }
+    
+  }
 
-#progress {
-  float: left;
-  width: 16%;
-  height: 20px;
-  background: $primary-brand;
-  z-index: 333;
-  //border-radius: 5px;
-}
+  #glass {
+    width: 100%;
+    height: 20px;
+    background: $background-gray;
+    border-radius: 10px;
+    float: left;
+    overflow: hidden;
+  }
 
-.goal-stat {
-  width: 25%;
-  //height: 30px;
-  padding: 10px;
-  float: left;
-  margin: 0;
-  
-  @media only screen and (max-width : 640px) {
-    width: 50%;
-    text-align: center;
+  #progress {
+    float: left;
+    height: 20px;
+    background: $primary-brand;
+    z-index: 333;
+    //border-radius: 5px;
+  }
+
+  .goal-stat {
+    width: 25%;
+    //height: 30px;
+    padding: 10px;
+    float: left;
+    margin: 0;
+    
+    @media only screen and (max-width : 640px) {
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+  .goal-number, .goal-label {
+    display: block;
+  }
+
+  .goal-number {
+    font-weight: bold;
   }
 }
 
-.goal-number, .goal-label {
-  display: block;
-}
-
-.goal-number {
-  font-weight: bold;
-}
