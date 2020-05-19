@@ -1283,3 +1283,70 @@ section.three-column-text-with-image a.btn-default {
   display: inline-block;
   margin-top: 20px;
   margin-bottom: 20px; }
+
+section.fundraiser .columns {
+  display: flex; }
+  @media screen and (max-width: 550px) {
+    section.fundraiser .columns {
+      flex-direction: column; } }
+
+section.fundraiser .column {
+  width: 55%;
+  padding-right: 60px; }
+  @media screen and (max-width: 550px) {
+    section.fundraiser .column {
+      width: 100%;
+      padding: 0; } }
+
+section.fundraiser body * {
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box; }
+
+section.fundraiser body {
+  background-color: #142F4C; }
+
+section.fundraiser #countdown-wrap {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  font-family: arial;
+  max-width: 650px;
+  margin: 150px auto 300px; }
+
+section.fundraiser #goal {
+  font-size: 48px;
+  text-align: right; }
+  @media only screen and (max-width: 640px) {
+    section.fundraiser #goal {
+      text-align: center; } }
+
+section.fundraiser #glass {
+  width: 100%;
+  height: 20px;
+  background: #c7c7c7;
+  border-radius: 10px;
+  float: left;
+  overflow: hidden; }
+
+section.fundraiser #progress {
+  float: left;
+  width: 16%;
+  height: 20px;
+  background: #FF5D50;
+  z-index: 333; }
+
+section.fundraiser .goal-stat {
+  width: 25%;
+  padding: 10px;
+  float: left;
+  margin: 0; }
+  @media only screen and (max-width: 640px) {
+    section.fundraiser .goal-stat {
+      width: 50%;
+      text-align: center; } }
+
+section.fundraiser .goal-number, section.fundraiser .goal-label {
+  display: block; }
+
+section.fundraiser .goal-number {
+  font-weight: bold; }
