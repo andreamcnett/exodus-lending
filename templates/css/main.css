@@ -438,34 +438,6 @@ button.btn-default-underline {
     color: #70c8bc;
     border-bottom: 4px solid #70c8bc; }
 
-.sticky-footer {
-  height: auto;
-  padding: 20px;
-  max-width: 1200px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background-color: #414042;
-  position: fixed;
-  bottom: 0; }
-  .sticky-footer .svg-inline--fa {
-    position: absolute;
-    right: 0;
-    color: white;
-    top: -20px;
-    margin-top: 10px;
-    font-size: 25px; }
-  .sticky-footer .content {
-    padding-top: 20px; }
-  .sticky-footer h4 {
-    color: white;
-    margin-bottom: 30px;
-    text-align: center; }
-  .sticky-footer a.btn-med {
-    left: 50%;
-    transform: translate(-50%, 0);
-    position: absolute;
-    display: inline-block; }
-
 footer.footer .content {
   padding: 0; }
   @media screen and (max-width: 550px) {
@@ -1341,3 +1313,32 @@ section.fundraiser .column {
 
 .goal-number {
   font-weight: bold; }
+
+.sticky-footer {
+  height: auto;
+  padding: 20px;
+  max-width: 1200px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #414042;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000; }
+  .sticky-footer .svg-inline--fa {
+    position: absolute;
+    right: 0;
+    color: white;
+    top: -20px;
+    margin-top: 10px;
+    font-size: 25px; }
+  .sticky-footer .content {
+    padding-top: 20px; }
+  .sticky-footer h4 {
+    color: white;
+    margin-bottom: 30px;
+    text-align: center; }
+  .sticky-footer a.btn-med {
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    display: inline-block; }
