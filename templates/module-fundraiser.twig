@@ -7,31 +7,25 @@
         <div class="column">
           <p>{{module.description}}</p>
         </div>
-        <div class="column progress-bar">
-          <div id="countdown-wrap">
-            <div id="goal">${{module.goal}}</div>
-            <div id="glass">
-              <div id="progress" style="width: calc(30 / 50);">
-              </div>
+        <div class="column">
+          <div id="goal">${{module.goal}}</div>
+          <div id="glass">
+            <div id="progress" style="width: {{module.funded}}%;">
             </div>
-            <div class="goal-stat">
-              <span class="goal-number"><span id="funded"></span></span>
-              <span class="goal-label">Funded</span>
-            </div>
-            <div class="goal-stat">
-              <span class="goal-number">${{module.raised}}</span>
-              <span class="goal-label">Raised</span>
-            </div>
-            <div class="goal-stat">
-              <span class="goal-number">{{module.days}}</span>
-              <span class="goal-label">Days to Go</span>
-            </div>
+          </div>
+          <div class="goal-stat">
+            <span class="goal-number">{{module.funded}}%</span>
+            <span class="goal-label">Funded</span>
+          </div>
+          <div class="goal-stat">
+            <span class="goal-number">${{module.raised}}</span>
+            <span class="goal-label">Raised</span>
+          </div>
+          <div class="goal-stat">
+            <span class="goal-number">{{module.days}}</span>
+            <span class="goal-label">Days to Go</span>
           </div>
         </div>
       </div>
     </div>
-  <script>
-    var x = ({{module.raised}} / {{module.goal}}) * 100;
-    document.getElementById("funded").innerHTML = Math.round(x);
-  </script>
   </section>
