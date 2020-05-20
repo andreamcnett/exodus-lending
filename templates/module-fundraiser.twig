@@ -10,11 +10,11 @@
         <div class="column">
           <div id="goal">${{module.goal}}</div>
           <div id="glass">
-            <div id="progress" style="width: {{module.funded}}%;">
+            <div id="progress" style="width: {{ (module.raised / module.goal) * 100 }}%;">
             </div>
           </div>
           <div class="goal-stat">
-            <span class="goal-number">{{module.funded}}%</span>
+            <span class="goal-number">{{ ((module.raised / module.goal) * 100) | round(0, 'floor') }}%</span>
             <span class="goal-label">Funded</span>
           </div>
           <div class="goal-stat">
