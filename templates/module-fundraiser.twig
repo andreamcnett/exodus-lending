@@ -22,16 +22,7 @@
             <span class="goal-label">Raised</span>
           </div>
           <div class="goal-stat">
-            <span class="goal-number">
-              {# endDate and startDate are strings or DateTime objects #}
-                {% set difference = date(module.enddate).diff(date(module.startdate)) %}
-                {% set leftDays = difference.days %}
-                {% if leftDays == 1 %}
-                  1 day
-                {% else %}
-                  {{ leftDays }} days
-                {% endif %}
-            </span>
+            <span class="goal-number">{{module.daysleft}}</span>
             <span class="goal-label">Days to Go</span>
           </div>
         </div>
